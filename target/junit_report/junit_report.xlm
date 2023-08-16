@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="28.287" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Dashboard page feature" name="Verify Dashboard page quick_launch_Cards" time="27.657">
+<system-out><![CDATA[
+Given user_is_on_dashboad_page..............................................passed
+When Enter LoginPagee Username_field........................................passed
+When Enter LoginPagee Password_field........................................passed
+When Enter LoginPagee submitBtn.............................................passed
+Then varify DashboadPage quick_launch_Card_icon IsDisplayed.................passed
+]]></system-out>
+</testcase>
+</testsuite>
