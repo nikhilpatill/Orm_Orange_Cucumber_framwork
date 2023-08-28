@@ -1,43 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-16T10:04:04 IST" name="Default suite" finished-at="2023-08-16T10:04:36 IST" duration-ms="31567">
+  <suite started-at="2023-08-28T16:41:58 IST" name="Default suite" finished-at="2023-08-28T16:42:55 IST" duration-ms="56435">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4681c175]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@5524cca1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-08-16T10:04:04 IST" name="Default test" finished-at="2023-08-16T10:04:36 IST" duration-ms="31567">
+    <test started-at="2023-08-28T16:41:58 IST" name="Default test" finished-at="2023-08-28T16:42:55 IST" duration-ms="56435">
       <class name="org.testRunners.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.testRunners.TestRunner@4681c175]" started-at="2023-08-16T10:04:04 IST" name="setUpClass" finished-at="2023-08-16T10:04:07 IST" duration-ms="2759" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.testRunners.TestRunner@5524cca1]" started-at="2023-08-28T16:41:58 IST" name="setUpClass" finished-at="2023-08-28T16:42:01 IST" duration-ms="2042" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2dac2e1b]]>
+                <![CDATA[org.testng.TestRunner@2dc21583]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4681c175]" started-at="2023-08-16T10:04:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-16T10:04:35 IST" duration-ms="27821" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@5524cca1]" started-at="2023-08-28T16:42:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-28T16:42:22 IST" duration-ms="21003" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify Dashboard page quick_launch_Cards"]]>
+                <![CDATA["verify Dashboad page User_ManagementBtn in User modules"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Dashboard page feature"]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.testRunners.TestRunner@4681c175]" started-at="2023-08-16T10:04:35 IST" name="tearDownClass" finished-at="2023-08-16T10:04:36 IST" duration-ms="887" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@5524cca1]" started-at="2023-08-28T16:42:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-28T16:42:38 IST" duration-ms="16744" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify Dashboad page User_ManagementBtn in ADDUsers_labels modules"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@5524cca1]" started-at="2023-08-28T16:42:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-28T16:42:54 IST" duration-ms="15586" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify Dashboad page User_ManagementBtn in ADDUsers_labels savebtn  modules"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.testRunners.TestRunner@5524cca1]" started-at="2023-08-28T16:42:54 IST" name="tearDownClass" finished-at="2023-08-28T16:42:55 IST" duration-ms="939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

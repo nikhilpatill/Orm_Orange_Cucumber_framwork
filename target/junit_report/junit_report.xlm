@@ -1,12 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="28.287" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Dashboard page feature" name="Verify Dashboard page quick_launch_Cards" time="27.657">
+<testsuite name="Cucumber" time="53.624" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Login Functionality" name="verify Dashboad page User_ManagementBtn in User modules" time="20.805">
 <system-out><![CDATA[
-Given user_is_on_dashboad_page..............................................passed
-When Enter LoginPagee Username_field........................................passed
-When Enter LoginPagee Password_field........................................passed
-When Enter LoginPagee submitBtn.............................................passed
-Then varify DashboadPage quick_launch_Card_icon IsDisplayed.................passed
+Given user_is_on_Admin_module_page..........................................passed
+When Enter LoginPageee Username_field.......................................passed
+When Enter LoginPageee Password_field.......................................passed
+When Enter LoginPageee submitBtn............................................passed
+When Click Admin_module.....................................................passed
+When Click User_ManagementBtn...............................................passed
+When Click UserBtn..........................................................passed
+When Click SystemUser_ADD_BTN...............................................passed
+Then varify DashboadPagee "Url" IsDisplayed "https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="verify Dashboad page User_ManagementBtn in ADDUsers_labels modules" time="16.679">
+<system-out><![CDATA[
+Given user_is_on_Admin_module_page..........................................passed
+When Enter LoginPageee Username_field.......................................passed
+When Enter LoginPageee Password_field.......................................passed
+When Enter LoginPageee submitBtn............................................passed
+When Click Admin_module.....................................................passed
+When Click User_ManagementBtn...............................................passed
+When Click UserBtn..........................................................passed
+When Click SystemUser_ADD_BTN...............................................passed
+Then ADDUsers_labels page has "User Role","Employee Name","Status","Username","Password","Confirm Password".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="verify Dashboad page User_ManagementBtn in ADDUsers_labels savebtn  modules" time="15.541">
+<system-out><![CDATA[
+Given user_is_on_Admin_module_page..........................................passed
+When Enter LoginPageee Username_field.......................................passed
+When Enter LoginPageee Password_field.......................................passed
+When Enter LoginPageee submitBtn............................................passed
+When Click Admin_module.....................................................passed
+When Click User_ManagementBtn...............................................passed
+When Click UserBtn..........................................................passed
+When Click SystemUser_ADD_BTN...............................................passed
+When Click Save_Btn.........................................................passed
+Then varify DashboadPagee "Url" IsDisplayed "https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser".passed
 ]]></system-out>
 </testcase>
 </testsuite>

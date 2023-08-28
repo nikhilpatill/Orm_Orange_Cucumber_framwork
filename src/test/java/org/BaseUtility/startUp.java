@@ -123,17 +123,17 @@ public class startUp {
 		return ele.getText();
 	}
 	
-
-
+ 
 
 	
-	public WebDriver startUp(String bname, String Url) {
+	public static WebDriver startUp(String bname, String Url) {
 
 		WebDriver driver = null;
 
 		if (bname.equalsIgnoreCase("ch") || bname.equalsIgnoreCase("Chrome")) {
 			ChromeOptions option = new ChromeOptions();
 			option.addArguments("--remote-allow-origins=*");
+			option.setBrowserVersion("116");
 			option.addArguments("start-maximized");
 			option.addArguments("--disable-notifications");
 			

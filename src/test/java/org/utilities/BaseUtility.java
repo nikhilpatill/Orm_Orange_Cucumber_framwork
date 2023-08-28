@@ -198,6 +198,7 @@ public class BaseUtility {
 		}else if (type.equalsIgnoreCase("class")) {
 			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className(expression))));
 		}
+		
 	}
 	
 	public WebDriver initBrowser(String bName) {

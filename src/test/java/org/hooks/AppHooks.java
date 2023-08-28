@@ -26,16 +26,7 @@ public class AppHooks {
 	public static Scenario scn;
 	
 	
-	
-	@Before(order=1)
-	public void test() {
-		try {
-			Runtime.getRuntime().exec("taskkill /F /IM \"chromedriver.exe\" /T");
-		}catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-	
+
 	
 	
 	

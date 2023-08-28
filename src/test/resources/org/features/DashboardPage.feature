@@ -197,7 +197,7 @@ Feature: Dashboard page feature
     When Enter LoginPagee submitBtn
     Then varify DashboadPage My_Actions_Cards_symbol IsDisplayed
     
-   @smoke
+   
     Scenario: Verify Dashboard page quick_launch_Cards
     Given user_is_on_dashboad_page
     When Enter LoginPagee Username_field
