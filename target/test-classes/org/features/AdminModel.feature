@@ -1,7 +1,7 @@
 
 Feature: Login Functionality
 
- 
+
    Scenario: verify Dashboad page
     Given user_is_on_Admin_module_page
     When Enter LoginPageee Username_field
@@ -46,7 +46,7 @@ Feature: Login Functionality
     
   
     
-      @smoke
+   
    Scenario: verify Dashboad page User_ManagementBtn in User modules 
     Given user_is_on_Admin_module_page
     When Enter LoginPageee Username_field
@@ -59,7 +59,7 @@ Feature: Login Functionality
     Then varify DashboadPagee "Url" IsDisplayed "https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser"
     
     
-   @smoke
+  
    Scenario: verify Dashboad page User_ManagementBtn in ADDUsers_labels modules 
     Given user_is_on_Admin_module_page
     When Enter LoginPageee Username_field
@@ -73,38 +73,8 @@ Feature: Login Functionality
     
     
     
-       
-   @smoke
-   Scenario: verify Dashboad page User_ManagementBtn in ADDUsers_labels savebtn  modules 
-    Given user_is_on_Admin_module_page
-    When Enter LoginPageee Username_field
-    When Enter LoginPageee Password_field
-    When Enter LoginPageee submitBtn
-    When Click Admin_module 
-    When Click User_ManagementBtn 
-    When Click UserBtn 
-    When Click SystemUser_ADD_BTN 
-    When Click Save_Btn 
-    Then varify DashboadPagee "Url" IsDisplayed "https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser"
-    
-    
-     @smoke
-   Scenario: verify Dashboad page User_ManagementBtn in ADDUsers_labels savebtn  modules 
-    Given user_is_on_Admin_module_page
-    When Enter LoginPageee Username_field
-    When Enter LoginPageee Password_field
-    When Enter LoginPageee submitBtn
-    When Click Admin_module 
-    When Click User_ManagementBtn 
-    When Click UserBtn 
-    When Click SystemUser_ADD_BTN 
-    When Click Save_Btn 
-     When Click UserRoll 
-    
-    
-    
-    
-    
+   
+   
    Scenario: verify Admin page
     Given user_is_on_Admin_module_page
     When Enter LoginPageee Username_field

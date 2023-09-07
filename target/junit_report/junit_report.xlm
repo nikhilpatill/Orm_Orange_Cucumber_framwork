@@ -1,43 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="53.624" tests="3" skipped="0" failures="0" errors="0">
-<testcase classname="Login Functionality" name="verify Dashboad page User_ManagementBtn in User modules" time="20.805">
+<testsuite name="Cucumber" time="126.914" tests="8" skipped="0" failures="0" errors="0">
+<testcase classname="PIM  Functionality" name="verify PIM page" time="15.952">
 <system-out><![CDATA[
-Given user_is_on_Admin_module_page..........................................passed
-When Enter LoginPageee Username_field.......................................passed
-When Enter LoginPageee Password_field.......................................passed
-When Enter LoginPageee submitBtn............................................passed
-When Click Admin_module.....................................................passed
-When Click User_ManagementBtn...............................................passed
-When Click UserBtn..........................................................passed
-When Click SystemUser_ADD_BTN...............................................passed
-Then varify DashboadPagee "Url" IsDisplayed "https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser".passed
+Given user_is_on_PIM_module_page............................................passed
+When Enter LoginnPage Username_field........................................passed
+When Enter LoginnPageee Password_field......................................passed
+When Enter LoginnPageee submitBtn...........................................passed
+When Click PIMButton........................................................passed
+Then varify PIMPagee "Url" IsDisplayed "https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList".passed
+Then varify PIMPagee "Title" IsDisplayed "OrangeHRM"........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Functionality" name="verify Dashboad page User_ManagementBtn in ADDUsers_labels modules" time="16.679">
+<testcase classname="PIM  Functionality" name="verify PIM page" time="12.715">
 <system-out><![CDATA[
-Given user_is_on_Admin_module_page..........................................passed
-When Enter LoginPageee Username_field.......................................passed
-When Enter LoginPageee Password_field.......................................passed
-When Enter LoginPageee submitBtn............................................passed
-When Click Admin_module.....................................................passed
-When Click User_ManagementBtn...............................................passed
-When Click UserBtn..........................................................passed
-When Click SystemUser_ADD_BTN...............................................passed
-Then ADDUsers_labels page has "User Role","Employee Name","Status","Username","Password","Confirm Password".passed
+Given user_is_on_PIM_module_page............................................passed
+When Enter LoginnPage Username_field........................................passed
+When Enter LoginnPageee Password_field......................................passed
+When Enter LoginnPageee submitBtn...........................................passed
+When Click PIMButton........................................................passed
+Then varify PIMPagee "Url" IsDisplayed "https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList".passed
+Then varify PIMPagee "Title" IsDisplayed "OrangeHRM"........................passed
+Then varify PIMPagee "PIMtext" IsDisplayed "PIM"............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Functionality" name="verify Dashboad page User_ManagementBtn in ADDUsers_labels savebtn  modules" time="15.541">
+<testcase classname="PIM  Functionality" name="verify PIM page" time="16.317">
 <system-out><![CDATA[
-Given user_is_on_Admin_module_page..........................................passed
-When Enter LoginPageee Username_field.......................................passed
-When Enter LoginPageee Password_field.......................................passed
-When Enter LoginPageee submitBtn............................................passed
-When Click Admin_module.....................................................passed
-When Click User_ManagementBtn...............................................passed
-When Click UserBtn..........................................................passed
-When Click SystemUser_ADD_BTN...............................................passed
-When Click Save_Btn.........................................................passed
-Then varify DashboadPagee "Url" IsDisplayed "https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser".passed
+Given user_is_on_PIM_module_page............................................passed
+When Enter LoginnPage Username_field........................................passed
+When Enter LoginnPageee Password_field......................................passed
+When Enter LoginnPageee submitBtn...........................................passed
+When Click PIMButton........................................................passed
+When Click ConfigrationBTN..................................................passed
+Then PIM page has "Optional Fields","Custom Fields","Data Import","Reporting Methods","Termination Reasons".passed
+]]></system-out>
+</testcase>
+<testcase classname="PIM  Functionality" name="verify PIM page" time="16.97">
+<system-out><![CDATA[
+Given user_is_on_PIM_module_page............................................passed
+When Enter LoginnPage Username_field........................................passed
+When Enter LoginnPageee Password_field......................................passed
+When Enter LoginnPageee submitBtn...........................................passed
+When Click PIMButton........................................................passed
+When Click ConfigrationBTN..................................................passed
+When Click Optional_Fieldslinktext..........................................passed
+Then varify PIMPagee "Url" IsDisplayed "https://opensource-demo.orangehrmlive.com/web/index.php/pim/configurePim".passed
+]]></system-out>
+</testcase>
+<testcase classname="PIM  Functionality" name="verify PIM page" time="18.097">
+<system-out><![CDATA[
+Given user_is_on_PIM_module_page............................................passed
+When Enter LoginnPage Username_field........................................passed
+When Enter LoginnPageee Password_field......................................passed
+When Enter LoginnPageee submitBtn...........................................passed
+When Click PIMButton........................................................passed
+When Click ConfigrationBTN..................................................passed
+When Click Custom_Fieldslinktext............................................passed
+Then varify PIMPagee "Url" IsDisplayed "https://opensource-demo.orangehrmlive.com/web/index.php/pim/listCustomFields".passed
+]]></system-out>
+</testcase>
+<testcase classname="PIM  Functionality" name="verify PIM page" time="14.854">
+<system-out><![CDATA[
+Given user_is_on_PIM_module_page............................................passed
+When Enter LoginnPage Username_field........................................passed
+When Enter LoginnPageee Password_field......................................passed
+When Enter LoginnPageee submitBtn...........................................passed
+When Click PIMButton........................................................passed
+When Click ConfigrationBTN..................................................passed
+When Click Data_Importlinktext..............................................passed
+Then varify PIMPagee "Url" IsDisplayed "https://opensource-demo.orangehrmlive.com/web/index.php/pim/pimCsvImport".passed
+]]></system-out>
+</testcase>
+<testcase classname="PIM  Functionality" name="verify PIM page" time="16.914">
+<system-out><![CDATA[
+Given user_is_on_PIM_module_page............................................passed
+When Enter LoginnPage Username_field........................................passed
+When Enter LoginnPageee Password_field......................................passed
+When Enter LoginnPageee submitBtn...........................................passed
+When Click PIMButton........................................................passed
+When Click ConfigrationBTN..................................................passed
+When Click Reporting_Methodslinktext........................................passed
+Then varify PIMPagee "Url" IsDisplayed "https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewReportingMethods".passed
+]]></system-out>
+</testcase>
+<testcase classname="PIM  Functionality" name="verify PIM page" time="14.024">
+<system-out><![CDATA[
+Given user_is_on_PIM_module_page............................................passed
+When Enter LoginnPage Username_field........................................passed
+When Enter LoginnPageee Password_field......................................passed
+When Enter LoginnPageee submitBtn...........................................passed
+When Click PIMButton........................................................passed
+When Click ConfigrationBTN..................................................passed
+When Click Termination_Reasonslinktext......................................passed
+Then varify PIMPagee "Url" IsDisplayed "https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewTerminationReasons".passed
 ]]></system-out>
 </testcase>
 </testsuite>

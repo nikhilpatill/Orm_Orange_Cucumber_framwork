@@ -233,11 +233,7 @@ public class AdminStepDef {
     	ap.UserBtn();;
     }
     
-    @When("Click Save_Btn")
-    public void click_Save_Btn() {
-       
-    	ap.Save_Btn();
-    }
+  
     
     @When("Click Save_Btn")
     public void click_UserRoll() {
