@@ -53,6 +53,8 @@ public class AppHooks {
 	public void tearDown() {
 		driver.quit();
 	}
+	
+	
 	@After  (order=10)
 	public void takeScreenshot() throws InterruptedException {
 		if(AppHooks.scn.isFailed()) {
